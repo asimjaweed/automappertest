@@ -1,0 +1,30 @@
+﻿@model EmployeeModel
+<h4 class="display-4">Add New Employee</h4>
+<form method="post" asp-controller="Home" asp-action="AddEmployee" enctype="multipart/form-data">
+    <div class="container">
+        <div class="form-group">
+            <label class="">First Name</label>
+            <input class="form-control" type="text" asp-for="FirstName" />
+        </div>
+        <div class="form-group">
+            <label>Last Name</label>
+            <input class="form-control" type="text" asp-for="LastName" />
+        </div>
+        <div class="form-group">
+            <label>Email Address</label>
+            <input class="form-control" type="text" asp-for="Email" />
+        </div>
+        <div class="form-group">
+            <label>Confirm Email</label>
+            <input class="form-control" type="text" asp-for="ConfirmEmail" />
+        </div>
+        <div class="form-group">
+            <label>Date of Birth</label>
+            <input class="form-control" type="date" asp-for="DateOfBrith" />
+        </div>
+        <div class="form-group">
+            <input type="submit" class="btn btn-outline-primary" />
+        </div>
+
+    </div>
+</form>
